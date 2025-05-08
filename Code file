@@ -1,0 +1,50 @@
+🔌 Wiring Guide
+HC-05 Pin	Connect to Arduino
+VCC	5V
+GND	GND
+TX	RX (Pin 0)
+RX	TX (Pin 1) (via voltage divider or 1kΩ–2kΩ resistor)
+
+| Relay IN | Arduino Pin 7 |
+| Relay VCC | 5V |
+| Relay GND | GND |
+
+✅ Arduino Code:::
+
+
+const int relayPin = 7;
+
+void setup() {
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin, HIGH);  // Relay off
+  Serial.begin(9600);            // HC-05 default baud rate
+}
+
+void loop() {
+  if (Serial.available()) {
+    char command = Serial.read();
+
+    if (command == '1') {
+      digitalWrite(relayPin, LOW);   // Turn ON relay
+    }
+    else if (command == '0') {
+      digitalWrite(relayPin, HIGH);  // Turn OFF relay
+    }
+  }
+}
+
+
+
+
+Upload the code to Arduino.
+
+Open a Bluetooth terminal app on your phone.
+
+Pair with HC-05 (default PIN: 1234 or 0000).
+
+Send:
+
+1 → Turns ON the light/fan
+
+0 → Turns OFF the light/fan
+
