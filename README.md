@@ -44,22 +44,6 @@ This project allows you to wirelessly control a light or fan using an **ESP32 or
 - Use a mobile app (like Bluetooth Terminal or custom app)
 - Send commands (`ON`, `OFF`) to control relay
 
----
-
-## 📄 Files
-
-- `esp_code/light_control_wifi.ino` – Wi-Fi version for ESP32
-- `arduino_code/light_control_bt.ino` – Bluetooth version for Arduino + HC-05
-- `media/` – Circuit diagrams and demo screenshots
-
----
-
-## 📷 Demo
-
-![App Screenshot](media/demo_screenshot.png)
-
----
-
 ## 📜 License
 
 MIT – Free to use and modify.
