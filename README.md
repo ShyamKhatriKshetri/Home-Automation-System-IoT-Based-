@@ -44,8 +44,5 @@ This project allows you to wirelessly control a light or fan using an **ESP32 or
 - Use a mobile app (like Bluetooth Terminal or custom app)
 - Send commands (`ON`, `OFF`) to control relay
 
-## 📜 License
-
-MIT – Free to use and modify.
 
 > A tiny step toward smart homes 🚪💡
