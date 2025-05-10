@@ -26,8 +26,8 @@ This project allows you to wirelessly control a light or fan using an **ESP32 or
 ---
 
 ## 🔌 Wiring Diagram
+circuit diagram
 
-![Circuit Diagram](media/circuit_diagram.png)  
 *(Relay IN to GPIO, VCC to 5V, GND to GND, Load through NO and COM)*
 
 ---
